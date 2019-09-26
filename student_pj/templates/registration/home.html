@@ -1,0 +1,28 @@
+{% extends 'registration/base.html' %}
+
+{% block content %}
+    <h1 style="color: green">vigits!!!:{% if user.is_authenticated  %}{{ user.username }}{% else %}vigitor{% endif %}
+    </h1><br>
+    <p>
+    <strong style="color: red">total user's registred!!!:{{ count }}</strong>
+    </p>
+{#    <a href="{% url 'signup' %}">signup</a><br>#}
+{#    <br>#}
+{#    <a href="{% url 'login' %}">login</a><br>#}
+{#     <a href="{% url 'logout' %}">logout</a><br>#}
+{#    <br>#}
+{#    <a href="{% url 'student_signup' %}">student_signup</a><br>#}
+{#    <a href="{% url 'student_login' %}">student_login</a><br>#}
+{#    <a href="{% url 'student_display' %}">student_display</a><br>#}
+{#    <a href="{% url 'search' %}">student_search</a><br>#}
+
+{#     <a href="{% url 'sms' %}">student_sms</a><br>#}
+
+
+
+{#    <script src="{% static 'images/2.jpg' %}"></script>#}
+
+
+
+
+{% endblock %}
