@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block register %}
+    <h1 style="color: red"  align="center" title="Regisraion" size="30px">Regisraion here!! </h1>
+    <form action="" method="post" align="center" >
+    {% csrf_token %}
+        {{ form.as_p }}
+        <button onclick="{% url 'home' %}">submit</button>
+    </table>
+    </form>
+{% endblock %}

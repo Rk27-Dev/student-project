@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1 align="center"  style="color: green"  > choose your rooms</h1>
+    <div style="max-width:400px;margin:auto">
+        <div class="input-icons">
+    <form action="" method="get">
+        <i class="fa fa-user icon"></i>
+    2BHK/2500rs:<input type="radio"  name="r1" value="2500"><br>
+        <i class="fa fa-envelope icon"></i>
+    1BHK/1500rs:<input  class="input-field" type="radio" name="r1" value="1500"><br>
+        <i class="fa fa-facebook icon"></i>
+    single/700rs:<input class="input-field" type="radio" name="r1" value="700">
+{#        <input type="number" min="1" max="100">#}
+    <br>
+{#    <button onclick="{% url 'food' %}">submit </button>#}
+
+         <input type="submit" value="submit">
+    </form>
+        </div>
+  </div>
+{% endblock %}
+
+
+
+
+
